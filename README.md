@@ -11,4 +11,4 @@
 
 **5.** Так как программа работает только для целых чисел, то `ошибки переполнения` быть не может, так что аварийного завершения работы **возникать не будет**.
 
-![workflow](https:/github.com/dlkeyxq/tz3/actions/workflows/github.yml/badge.svg)
+![workflow](https:/github.com/dlkeyxq/tz3/actions/workflows/actions.yml/badge.svg)
