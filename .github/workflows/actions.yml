@@ -14,7 +14,8 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
             ${{ github.actor }} created commit:
-            Commit message: ${{ git log -1 --pretty=format:"%s" }}
+            Commit message: ${{ github.event.commits[0].state }}
+            
             
             
             Repository: ${{ github.repository }}
