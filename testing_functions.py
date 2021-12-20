@@ -91,7 +91,7 @@ class TestNumbers(unittest.TestCase):
         summary(nums)
         composition(nums)
         interval2 = time() - start2
-        self.assertAlmostEqual(interval1, interval2)
+        self.assertNotAlmostEqual(interval1, interval2)
 
 
 if __name__ == '__main__':
