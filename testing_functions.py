@@ -75,8 +75,8 @@ class TestNumbers(unittest.TestCase):
         self.assertGreater(time2, time1, 'Программа работает быстрее при увеличении размера входного файла')
         self.assertGreater(time3, time2, 'Программа работает быстрее при увеличении размера входного файла')
 
-    # Проверяет, одинаковое ли время требуется для выполнения всех
-    # функций (поиска минимума, максимума, сложения и умножения) на одном и том же наборе (из 100) чисел
+    # Проверяет, разное ли время требуется для выполнения всех функций (поиска минимума,
+    # максимума, сложения и умножения) повторно на одном и том же наборе (из 100) чисел
     def test_time(self):
         nums = numbers_for_test(100)
         start1 = time()
@@ -91,7 +91,7 @@ class TestNumbers(unittest.TestCase):
         summary(nums)
         composition(nums)
         interval2 = time() - start2
-        self.assertAlmostEqual(interval1, interval2)
+        self.assertNotAlmostEqual(interval1, interval2)
 
 
 if __name__ == '__main__':
